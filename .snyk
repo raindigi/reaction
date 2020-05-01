@@ -1,4 +1,74 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.3
-patch: {}
+version: v1.14.1
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - nock > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - query-parse > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - react-apollo > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - react-color > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - react-dates > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - react-dnd > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - react-dnd-html5-backend > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - simpl-schema > message-box > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - handlebars > async > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - apollo-server-express > apollo-server-core > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - apollo-server > apollo-server-core > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - react-color > reactcss > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - react-dnd > dnd-core > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - react-dnd-html5-backend > dnd-core > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - react-sortable-tree > react-dnd > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - react-sortable-tree > react-dnd-html5-backend > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - '@babel/plugin-proposal-function-sent > @babel/helper-wrap-function > @babel/traverse > lodash':
+        patched: '2020-05-01T01:33:24.811Z'
+    - '@reactioncommerce/data-factory > simpl-schema > message-box > lodash':
+        patched: '2020-05-01T01:33:24.811Z'
+    - apollo-server-express > apollo-server-core > apollo-engine-reporting > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - apollo-server > apollo-server-core > apollo-engine-reporting > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - apollo-server > apollo-server-express > apollo-server-core > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - node-geocoder > request-promise > request-promise-core > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - react-sortable-tree > react-dnd > dnd-core > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - react-sortable-tree > react-dnd-html5-backend > dnd-core > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - '@babel/plugin-proposal-function-sent > @babel/helper-wrap-function > @babel/traverse > @babel/generator > lodash':
+        patched: '2020-05-01T01:33:24.811Z'
+    - '@reactioncommerce/file-collections > tus-node-server > @google-cloud/storage > async > lodash':
+        patched: '2020-05-01T01:33:24.811Z'
+    - apollo-server > apollo-server-express > apollo-server-core > apollo-engine-reporting > lodash:
+        patched: '2020-05-01T01:33:24.811Z'
+    - '@babel/plugin-proposal-function-sent > @babel/helper-wrap-function > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash':
+        patched: '2020-05-01T01:33:24.811Z'
+    - '@babel/plugin-proposal-function-sent > @babel/helper-wrap-function > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash':
+        patched: '2020-05-01T01:33:24.811Z'
+    - '@reactioncommerce/components > react-select > emotion > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-05-01T01:33:24.811Z'
+    - '@reactioncommerce/file-collections > tus-node-server > @google-cloud/storage > @google-cloud/common > google-auto-auth > async > lodash':
+        patched: '2020-05-01T01:33:24.811Z'
+    - '@reactioncommerce/file-collections > tus-node-server > @google-cloud/storage > gcs-resumable-upload > google-auto-auth > async > lodash':
+        patched: '2020-05-01T01:33:24.811Z'
+    - '@reactioncommerce/file-collections > tus-node-server > @google-cloud/storage > @google-cloud/common > split-array-stream > async > lodash':
+        patched: '2020-05-01T01:33:24.811Z'
 ignore: {}
