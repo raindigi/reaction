@@ -158,7 +158,8 @@
     "tether-drop": "^1.4.2",
     "tether-tooltip": "^1.2.0",
     "transliteration": "^2.1.2",
-    "url": "^0.11.0"
+    "url": "^0.11.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/cli": "7.0.0",
@@ -195,8 +196,7 @@
     "jsdoc": "^3.5.5",
     "mongodb-memory-server": "2.7.3",
     "nodemon": "1.18.9",
-    "react-addons-test-utils": "15.6.2",
-    "snyk": "^1.126.0"
+    "react-addons-test-utils": "15.6.2"
   },
   "postcss": {
     "plugins": {
@@ -223,7 +223,9 @@
     "test:integration": "NODE_ENV=jesttest BABEL_DISABLE_CACHE=1 jest --maxWorkers=4 --no-cache /tests/",
     "test:integration:watch": "NODE_ENV=jesttest BABEL_DISABLE_CACHE=1 jest --maxWorkers=4 --no-cache --watch /tests/",
     "test:file": "NODE_ENV=jesttest BABEL_DISABLE_CACHE=1 jest --no-cache --watch",
-    "docs": "jsdoc . --configure .reaction/jsdoc/jsdoc.json --readme .reaction/jsdoc/templates/static/README.md"
+    "docs": "jsdoc . --configure .reaction/jsdoc/jsdoc.json --readme .reaction/jsdoc/templates/static/README.md",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "babel": {
     "plugins": [
@@ -417,5 +419,6 @@
     "watch": [
       "imports"
     ]
-  }
+  },
+  "snyk": true
 }
